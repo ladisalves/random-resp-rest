@@ -1,4 +1,4 @@
-# random-resp-rest
+# fastify-rest-test
 
 For Fastify testing purposes. Availability RESP API response generator.
 
