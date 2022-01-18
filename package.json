@@ -1,0 +1,28 @@
+{
+  "name": "random-resp-rest",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Genereta a random JSON response. For REST API response testing.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:prettier": "npx prettier --write ./src",
+    "lint:eslint": "npx eslint --fix ./src",
+    "lint": "yarn lint:prettier && yarn lint:eslint"
+  },
+  "repository": "git+https://github.com/ladisalves/random-resp-rest.git",
+  "author": "Ladislav Stefan <ladislaves@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladisalves/random-resp-rest/issues"
+  },
+  "homepage": "https://github.com/ladisalves/random-resp-rest#readme",
+  "dependencies": {
+    "fastify": "^3.26.0"
+  },
+  "devDependencies": {
+    "autocannon": "^7.6.0",
+    "eslint": "^8.7.0",
+    "prettier": "^2.5.1"
+  }
+}
