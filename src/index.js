@@ -24,11 +24,17 @@ server.get("/", async (request) => {
 })
 
 server.post("/", async (request) => {
-  console.log(request.body)
-  const timeout = request?.body?.timeout || 0
-
   return fakeResponse(timeout)
 })
+
+server.get("/benchmark", async (request) => {
+  return 'OK'
+})
+
+server.post("/benchmark", async (request) => {
+  return 'OK'
+})
+
 
 // Run the server!
 const start = async () => {

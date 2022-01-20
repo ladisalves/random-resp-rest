@@ -28,5 +28,5 @@ curl -X POST -H "Content-Type: application/json" -d '{"timeout": 10000}' -w '\n\
 You can make a benchmark for `timeout=0`.
 
 ```shell
-npx autocannon -c 100 -d 5 -p 10 http://localhost:3000?timeout=0
+npx autocannon -c 100 -d 5 -p 10 http://localhost:3000/bechmark
 ```
