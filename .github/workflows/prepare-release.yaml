@@ -1,0 +1,27 @@
+name: Prepare Production Release
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+      name: Prepare
+      runs-on: ubuntu
+      steps:
+            - name: GIT Checkout
+              uses: actions/checkout@v4
+              
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+
+            - name: Install
+              run: npm i
+
+            - name: Deploy
+              run: |
+                mkdir -p dist
+                date > dist/info.txt
+
+            
