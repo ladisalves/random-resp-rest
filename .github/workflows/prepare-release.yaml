@@ -18,7 +18,7 @@ jobs:
               env:
                   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
-                  VERSION='v0.0.1' curl -L \
+                  VERSION='v0.0.1'; curl -L \
                   -X POST \
                   -H "Accept: application/vnd.github+json" \
                   -H "Authorization: Bearer $GH_TOKEN" \
